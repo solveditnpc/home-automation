@@ -153,11 +153,11 @@ void setup() {
     });
     
     server.on("/light-bulb.png", HTTP_GET, [](AsyncWebServerRequest* request) {
-        request->send(SPIFFS, "/light-bulb.png", "image/png");
+        request->send(SPIFFS, "/light-bulb.jpg", "image/jpg");
     });
     
     server.on("/fan.png", HTTP_GET, [](AsyncWebServerRequest* request) {
-        request->send(SPIFFS, "/fan.png", "image/png");
+        request->send(SPIFFS, "/fan.jpg", "image/jpg");
     });
     
     // Start server
