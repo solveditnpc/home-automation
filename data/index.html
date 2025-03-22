@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Home Control</h1>
+            <p class="status">Status: <span id="connection-status">Connecting...</span></p>
+        </header>
+        
+        <div class="control-grid">
+            <div class="control-card">
+                <img src="light-bulb.jpg" alt="Light 1">
+                <h2>Living Room Light</h2>
+                <button class="toggle-btn" data-relay="0" onclick="toggleDevice(0)">
+                    <span class="status-dot"></span>
+                    Turn ON/OFF
+                </button>
+            </div>
+            
+            <div class="control-card">
+                <img src="light-bulb.jpg" alt="Light 2">
+                <h2>Bedroom Light</h2>
+                <button class="toggle-btn" data-relay="1" onclick="toggleDevice(1)">
+                    <span class="status-dot"></span>
+                    Turn ON/OFF
+                </button>
+            </div>
+            
+            <div class="control-card">
+                <img src="fan.jpg" alt="Fan 1">
+                <h2>Living Room Fan</h2>
+                <button class="toggle-btn" data-relay="2" onclick="toggleDevice(2)">
+                    <span class="status-dot"></span>
+                    Turn ON/OFF
+                </button>
+            </div>
+            
+            <div class="control-card">
+                <img src="fan.jpg" alt="Fan 2">
+                <h2>Bedroom Fan</h2>
+                <button class="toggle-btn" data-relay="3" onclick="toggleDevice(3)">
+                    <span class="status-dot"></span>
+                    Turn ON/OFF
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
